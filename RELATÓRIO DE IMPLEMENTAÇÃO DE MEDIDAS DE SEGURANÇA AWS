@@ -1,0 +1,20 @@
+RELATÓRIO DE IMPLEMENTAÇÃO DE MEDIDAS DE SEGURANÇA
+Data: 10/07/2024 Empresa: Abstergo Industries Responsável: Leonardo Canalez Duarte
+Introdução
+Este relatório apresenta o processo de implementação de ferramentas na empresa Abstergo Industries, realizado por Leonardo Canalez Duarte. O objetivo do projeto foi elencar 3 medidas de segurança em conjunto dos serviços da AWS, com a finalidade de realizar aumentar a segurança na empresa.
+Descrição do Projeto
+O projeto de implementação de ferramentas foi dividido em 3 medidas de segurança. A seguir, serão descritas as etapas da implementação:
+Princípio do privilégio mínimo e usuário root: 
+- Aplicar com IAM uma medida de que todo o usuário só terá acesso aquilo em que é necessário, por exemplo, um desenvolvedor só deve ter acesso a ferramentas de sua responsabilidade
+- Ao iniciar a conta fazer um usuário admin com todos os privilégios da conta root e apenas utilizar a conta admin, por que caso a conta admin seja comprometida, a conta root pode restaurar, caso contrário o root é a ultima linha de backup.
+MFA e IAM: 
+- MFA se trata de uma medida de autentificação de usuário, para garantir que é você mesmo, essa função deve ser aplicada em todas as contas AWS, principalmente no root e no admin máster, também deve se aplicar em usuário padrões, grupos e funções para que haja uma proteção dos seus serviços. 
+- IAM é uma ferramenta que administra a sua AWS, serve para gerenciar os grupos dos usuários e garantir autorização devida a recursos da AWS.
+Serviços adicionais: 
+- AWS Shield, é um serviço de proteção contra ataques DDoS (Distributed Denial of Service), disponível em duas edições: AWS Shield Standard e AWS Shield Advanced.
+- AWS inspector é um serviço de avaliação de segurança automatizada que ajuda a melhorar a segurança e conformidade das aplicações implantadas na AWS.
+- AWS GuardDuty é um serviço de detecção de ameaças que oferece monitoramento contínuo para identificar atividades maliciosas ou não autorizadas na sua conta AWS e workloads.
+Conclusão
+A implementação de ferramentas na empresa Abstergo Industries tem como esperado proteção da sua conta root, controle de acesso a seus usuários aplicando o principio do privilegio mínimo e segurança dos principais ataques crackers com as ferramentas Shield, inspector e guarduty, o que aumentará a eficiência e a produtividade da empresa. Recomenda-se a continuidade da utilização das ferramentas implementadas e a busca por novas tecnologias que possam melhorar ainda mais os processos da empresa.
+Assinatura do Responsável pelo Projeto:
+Leonardo Canalez Duarte
